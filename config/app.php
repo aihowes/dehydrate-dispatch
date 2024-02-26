@@ -157,6 +157,7 @@ return [
 
     'providers' => ServiceProvider::defaultProviders()->merge([
         App\Providers\AppServiceProvider::class,
+        Livewire\LivewireServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
@@ -175,6 +176,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Livewire' => Livewire\Livewire::class,
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
